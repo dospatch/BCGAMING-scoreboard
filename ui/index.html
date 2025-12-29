@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCGAMING Player List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img id="logo" src="" alt="Server Logo">
+        <div class="header-text">
+            <h1 id="serverName">BCGAMING Server</h1>
+            <p>Total Players: <span id="playerCount">0</span></p>
+        </div>
+    </div>
+    <div class="controls">
+        <input type="text" id="search" placeholder="Search players...">
+        <button id="refreshBtn">Refresh</button>
+    </div>
+    <table id="playerlist">
+        <thead>
+            <tr>
+                <th data-sort="id">ID ▼</th>
+                <th data-sort="name">Name ▼</th>
+                <th data-sort="job">Job ▼</th>
+                <th data-sort="ping">Ping ▼</th>
+                <th data-sort="admin">Admin ▼</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Players will be added here -->
+        </tbody>
+    </table>
+    <div id="totals">
+        <!-- Job totals will be added here -->
+    </div>
+    <button id="closeBtn">Close</button>
+    <script src="script.js"></script>
+</body>
+</html>
